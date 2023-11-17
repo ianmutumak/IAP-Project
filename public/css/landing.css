@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Gilda+Display&family=Montserrat:wght@500&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100vw !important;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar {
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #780000;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.logo-container {
+    justify-self: center !important;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 235px;
+    height: 100px;
+    object-fit: cover;
+}
+.menu-button {
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    display: flex;
+    justify-content: end;
+    justify-self: end;
+    align-items: end;
+}
+.menu-button button {
+    border-radius: 3px;
+}
+.hero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(
+            180.85deg,
+            rgba(255, 255, 255, 0) 0.73%,
+            rgba(0, 134, 255, 0) 35.63%,
+            #c1121eb9 99.28%
+        ),
+        url("../Images/school_1.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.hero-text {
+    display: inline-flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.hero-text h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 55px;
+    color: #780000;
+}
+.hero-text p {
+    font-family: "Gilda Display", serif;
+    font-size: 25px;
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+.h-btn-container {
+    margin-top: 4rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-btn {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.884);
+    padding: 1rem;
+    align-items: center;
+    border: none !important ;
+    justify-content: center;
+    height: 2rem;
+}
+.txt-bg {
+    position: absolute;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+}
+.bg {
+    position: absolute;
+    background-color: #780000;
+    width: 0%;
+    height: 3rem;
+    left: 0;
+    transition: all 0.5s ease;
+}
+.hero-btn:hover .bg {
+    width: 100%;
+}
+.hero-btn:hover .txt-bg {
+    color: white;
+}
+
+/* 
+footer */
+.footer-section {
+    display: inline-flex;
+    flex-direction: column;
+}
+.upper-foot {
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #780000;
+    padding: 1rem;
+    justify-content: end;
+    align-items: end;
+    gap: 2rem;
+    height: fit-content;
+    font-family: "Montserrat", sans-serif;
+}
+.upper-foot a {
+    color: #ffffff84;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.upper-foot a:hover {
+    color: white;
+}
+.lower-foot {
+    background-color: #ac0000;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding-block: 1.5rem;
+}
+.logo-display {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: fit-content;
+}
+.line {
+    height: 5px;
+    background-color: white !important;
+    width: 250px;
+    margin: 0px;
+    border-radius: 5px;
+}
+.lower-foot img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.lower-foot h3 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2rem;
+    color: white;
+    gap: 0.75rem;
+}
+
+.socials-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.round {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.425);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.534);
+}
+.round:hover {
+    color: white;
+}

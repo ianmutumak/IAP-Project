@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Gilda+Display&family=Montserrat:wght@500&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100vw !important;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.back {
+    left: 5%;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    justify-self: start;
+    align-items: center;
+    gap: 1rem;
+    height: inherit;
+}
+.nav-bar {
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #780000;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.logo-container {
+    justify-self: center !important;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 235px;
+    height: 100px;
+    object-fit: cover;
+}
+.menu-button {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    justify-self: end;
+    align-items: center;
+    gap: 1rem;
+    height: inherit;
+    font-family: "Montserrat", sans-serif;
+}
+.menu-button h3 {
+    font-size: 0.75rem;
+}
+.menu-button img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.page-head {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.page-head h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #780000;
+}
+.page-head span {
+    background-color: #780000;
+    border-radius: 5px;
+}
+.extra {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.extra img {
+    width: 25px;
+    object-fit: contain;
+    margin-left: 1rem;
+}
+
+.notices {
+    margin-top: 100px;
+    background: linear-gradient(
+            180.85deg,
+            rgba(255, 255, 255, 0) 0.73%,
+            rgba(0, 134, 255, 0) 35.63%,
+            #d4b6b8b9 99.28%
+        ),
+        url("../Images/notice.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.notice {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.notice h3 {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+.notice p {
+    font-family: "Gilda Display", serif;
+    text-align: start;
+    color: #780000;
+}
+.line {
+    background-color: #020202;
+    width: 50%;
+    height: 3px;
+    border-radius: 5px;
+}
+.owner {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}

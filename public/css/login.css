@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Gilda+Display&family=Montserrat:wght@500&display=swap");
+
+.login-body {
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    height: 85vh;
+    box-sizing: border-box;
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba(255, 255, 255, 0) 32.29%,
+            rgba(120, 0, 0, 0.4) 100%
+        ),
+        url("../Images/login_pg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-body img {
+    position: relative;
+    top: 0;
+    justify-self: center;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.login-form-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    backdrop-filter: blur(3px);
+    border: none;
+    padding: 1rem;
+}
+
+.login-form-container form {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.login-form-container input {
+    background-color: #00000000;
+}
+.input-field {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.btn {
+    margin-top: 2rem;
+}
+
+/* 
+footer */
+.footer-section {
+    display: inline-flex;
+    flex-direction: column;
+}
+.upper-foot {
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #780000;
+    padding: 1rem;
+    justify-content: end;
+    align-items: end;
+    gap: 2rem;
+    height: fit-content;
+    font-family: "Montserrat", sans-serif;
+}
+.upper-foot a {
+    color: #ffffff84;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.upper-foot a:hover {
+    color: white;
+}
+.lower-foot {
+    background-color: #ac0000;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding-block: 1.5rem;
+}
+.logo-display {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: fit-content;
+}
+.line {
+    height: 5px;
+    background-color: white !important;
+    width: 250px;
+    margin: 0px;
+    border-radius: 5px;
+}
+.lower-foot img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.lower-foot h3 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2rem;
+    color: white;
+    gap: 0.75rem;
+}
+
+.socials-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.round {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.425);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.534);
+}
+.round:hover {
+    color: white;
+}

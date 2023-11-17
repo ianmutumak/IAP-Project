@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Gilda+Display&family=Montserrat:wght@500&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100vw !important;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.back {
+    left: 5%;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    justify-self: start;
+    align-items: center;
+    gap: 1rem;
+    height: inherit;
+}
+.nav-bar {
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #780000;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.logo-container {
+    justify-self: center !important;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 235px;
+    height: 100px;
+    object-fit: cover;
+}
+.menu-button {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    justify-self: end;
+    align-items: center;
+    gap: 1rem;
+    height: inherit;
+    font-family: "Montserrat", sans-serif;
+}
+.menu-button h3 {
+    font-size: 0.75rem;
+}
+.menu-button img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.unit {
+    margin-top: 100px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.unit-head {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    border: 1px solid rgb(86, 86, 86);
+    padding: 2rem;
+}
+.unit-name {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.content {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px solid rgb(86, 86, 86);
+}
+
+.content h3 {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+.content p {
+    font-family: "Gilda Display", serif;
+}
